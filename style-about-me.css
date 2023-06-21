@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar b {
+    font-size: 30px;
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+.navbar a:hover,
+.navbar a:active {
+    transition-delay: 0s, 3s;
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    height: 100vh;
+    background-color: #191919;
+}
+
+.about .img-about {
+    text-align: center;
+    position: relative;
+}
+
+.about .img-about img {
+    max-width: 400px;
+    height: auto;
+}
+
+.about-content span {
+    color: #ededed;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #57FEFF;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+
+.about-content h2 span {
+    color: #FF00FE;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.about-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ededed;
+    margin-bottom: 3px;
+}
+
+.about-content p {
+    color: #ededed;
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 900px;
+    text-align: justify;
+}
+
+.info-about1,
+.info-about2,
+.info-about3 {
+    background: #57FEFF;
+    font-size: 12px;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: #00abd0;
+    border: 1px solid #FF00FE;
+    outline: 3px solid #FF00FE;
+    color: #191919;
+    z-index: 100;
+    animation: morph 6s linear infinite;
+}
+
+.info-about1 {
+    left:-10%;
+    top: 14%;
+}
+
+.info-about2 {
+    left: 81%;
+    top: 35%;
+}
+
+.info-about3 {
+    left: 31%;
+    top: 87%;
+}
+
+.img-about span {
+    color: #191919;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #57FEFF;
+    border: 2px solid #57FEFF;
+    border-radius: 8px; 
+    font-size: 23px;
+    color: #191919;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    transition-delay: 0s, 1s;
+    color: #FF00FE;
+    box-shadow:
+    0 0 10px #FF00FE,
+    0 0 20px #FF00FE,
+    0 0 40px #FF00FE,
+    0 0 80px #FF00FE,
+    0 0 160px #FF00FE;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #57FEFF ;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #191919;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #57FEFF;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 0%;
+    height: 100%;
+    background: #191919; 
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+width: 100%;
+}
+
+
+footer {
+    margin: 20px 10%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #57FEFF;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #57FEFF;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #191919;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #57FEFF;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+.btn-box a:hover::before {
+width: 100%;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showright {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipactivehover {
+    100% {
+        pointer-events: auto;
+    }   
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}

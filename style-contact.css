@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+body {
+    background-color: #191919;
+    color: #ededed;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar b {
+    font-size: 30px;
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+/* Contact Section */
+
+.contact {
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #57FEFF;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+.contact h2 span {
+    color: #FF00FE;
+    font-size: 4rem;
+}
+
+.contact form {
+    
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    color: #ededed;
+    background: #292929;
+    border-radius: 1rem;
+    margin: .7rem 0;
+    border: 2px solid #57FEFF;
+}
+
+.contact form .input-box input{
+    width: 49%;
+    height: 70px;
+}
+
+.contact form textarea {
+    resize: none;
+    height: 250px;
+}
+
+.contact form .btn {
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+/* Submit Button*/
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  
+  button {
+    min-width: 200px;
+    min-height: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #FF00FE;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(205px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #FF00FE;
+    box-shadow: 0 0 60px #FF00FE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 25px; height: 25px;
+    border-radius: 100%;
+    border: 6px solid #FF00FE;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+
+
+  /* Footer */
+
+
+.home-sci {
+    margin: 0px 10%;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #57FEFF;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #57FEFF;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #191919;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #57FEFF;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes showright {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipactivehover {
+    100% {
+        pointer-events: auto;
+    }   
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 250px;
+      height: 250px;
+      opacity: 0;
+    }
+  }

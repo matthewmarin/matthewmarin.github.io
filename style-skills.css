@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body {
+    color: #ededed;
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar b {
+    font-size: 30px;
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #57FEFF;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.4),
+    0 0 20px rgba(18, 247, 255, 0.4),
+    0 0 30px rgba(18, 247, 255, 0.4),
+    0 0 40px rgba(18, 247, 255, 0.4),
+    0 0 70px rgba(18, 247, 255, 0.4),
+    0 0 80px rgba(18, 247, 255, 0.4),
+    0 0 100px rgba(18, 247, 255, 0.4),
+    0 0 150px rgba(18, 247, 255, 0.4);
+}
+
+footer {
+    margin: 20px 10%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    animation: showright 1s ease forwards;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #57FEFF;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #57FEFF;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #191919;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #57FEFF;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+.btn-box a:hover::before {
+width: 100%;
+}
+
+/* Skill Section */
+
+
+.skill-left {
+    display: flex;
+    flex-direction: column;
+}
+.main-skills {
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    width: 500px;
+}
+
+.main-skills h2 {
+    font-size: 3rem;
+    color: #57FEFF;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.main-skills h2 span {
+    color: #FF00FE;
+    font-size: 4rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    height: 100vh;
+    background: #191919;
+}
+
+.skill-main {
+    margin-top: 100px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 100px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main .skill-left {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #FF00FE;
+    overflow: hidden;
+    display: flex;
+}
+.skill-main h3 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #57FEFF;
+    border-radius: 25px;
+}
+
+.skill-bar .bar .html {
+    width: 84%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css {
+    width: 77%;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript {
+    width: 0%;
+    animation: javascript 0s;
+}
+
+.skill-bar .bar .phyton {
+    width: 0%;
+    animation: phyton 0s;
+}
+
+/* skill right */
+
+.skill-right {
+    display: flex;
+    flex-direction: column;
+}
+/* KEYFRAMES ANIMATION */
+@keyframes showright {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipactivehover {
+    100% {
+        pointer-events: auto;
+    }   
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+
+@keyframes html {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 84%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 77%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes phyton {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 0%;
+    }
+}
